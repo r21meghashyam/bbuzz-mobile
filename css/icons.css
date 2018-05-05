@@ -1,0 +1,67 @@
+.loading-icon
+	{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	width:100%;
+	display:none;
+	}
+
+.loading-icon.active
+	{
+	display:block;
+	}
+
+.icon
+	{
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat!important;
+	background-position:-1px!important;
+	margin-bottom: -10px;
+	}
+
+.whatshot-icon
+	{
+	background:url('img/whatshot-black.png');
+	}	
+.active .whatshot-icon
+	{
+	background:url('img/whatshot-white.png');
+	}
+	
+.notification-icon
+	{
+	background:url('img/notification-black.svg');
+	}	
+.active .notification-icon
+	{
+	background:url('img/notification-white.svg');
+	}
+
+.account-icon
+	{
+	background:url('img/account-black.svg');
+	}
+
+.settings-icon
+	{
+	background:url('img/settings-black.svg');
+	}
+.report-icon
+	{
+	background:url('img/report-black.svg');
+	}
+	
+.logout-icon
+	{
+	background:url('img/logout-black.svg');
+	}
+	
+	
+.search-icon
+	{
+	background:url('img/search-white.svg');
+	}

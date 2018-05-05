@@ -1,0 +1,31 @@
+.menu.section a
+	{
+	font-size:20px;
+	color:#2D2D2D;
+	text-decoration:none;
+	}
+.notifications.section li
+	{
+	padding:10px;
+	border-top:1px solid #ccc;
+	}
+.notifications.section a
+	{
+	color:#888;
+	text-decoration:none;
+	}
+.white-list li
+	{
+	padding:10px;
+	border-top:1px solid #888;
+	color:#888;
+	}
+.white-list a
+	{
+	color:inherit;
+	text-decoration:none;
+	}
+.hidden
+	{
+	display:none;
+	}

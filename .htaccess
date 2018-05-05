@@ -1,0 +1,27 @@
+<IfModule mod_headers.c>
+	Header set Cache-Control "max-age=2592000"
+</IfModule>
+
+
+	RewriteEngine On
+
+	# Unless directory, remove trailing slash
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^([^/]+)/$ /$1 [R=301,L]
+
+	# Redirect external .php requests to extensionless url
+	RewriteCond %{THE_REQUEST} ^(.+)\.php([#?][^\ ]*)?\ HTTP/
+	RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+	# Resolve .php file for extensionless php urls
+	RewriteCond %{REQUEST_FILENAME}.php -f [NC]
+	RewriteRule ^ %{REQUEST_URI}.php [L]
+
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /402.php
